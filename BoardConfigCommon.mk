@@ -38,9 +38,9 @@ BOARD_PAGE_SIZE := 2048
 TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := tegra
 TARGET_BOOTLOADER_BOARD_NAME := p3
-#TARGET_BOARD_INFO_FILE := device/samsung/p4-common/board-info.txt
+#TARGET_BOARD_INFO_FILE := device/samsung/p5-common/board-info.txt
 
-BOARD_EGL_CFG := device/samsung/p4-common/egl.cfg
+BOARD_EGL_CFG := device/samsung/p5-common/egl.cfg
 
 #BOARD_USES_HGL := true
 #BOARD_USES_OVERLAY := true
@@ -52,19 +52,19 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 #TARGET_RECOVERY_UI_LIB := librecovery_ui_ventana
 
 # custom recovery ui
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/p4-common/recovery/recovery_ui.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/p5-common/recovery/recovery_ui.c
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 # override recovery init.rc
-TARGET_RECOVERY_INITRC := device/samsung/p4-common/recovery/init.rc
+TARGET_RECOVERY_INITRC := device/samsung/p5-common/recovery/init.rc
 
 # Indicate that the board has an Internal SD Card
 BOARD_HAS_SDCARD_INTERNAL := true
 
 # device-specific extensions to the updater binary
 #TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_ventana
-TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/p4-common
+TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/p5-common
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_FLASH_BLOCK_SIZE := 4096
 
