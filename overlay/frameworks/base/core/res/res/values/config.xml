@@ -51,6 +51,7 @@
          Zone N + 1     array[N] <= LUX < infinity
 
          Must be overridden in platform specific overlays -->
+    <!-- The p5wifi light sensors reports 20,200,1000,2000,8000,20000,40000,70000 -->
     <integer-array name="config_autoBrightnessLevels">
          <item>200</item>
          <item>1000</item>
@@ -65,14 +66,15 @@
          in the config_autoBrightnessLevels array.  This array should have size one greater
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
+    <!-- Values taken from stock Honeycomb 3.1 firmware and confirmed still being the same in stock 3.2 (KJ5) firmware -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-         <item>60</item>
-         <item>110</item>
-         <item>160</item>
-         <item>210</item>
-         <item>255</item>
-         <item>255</item>
-         <item>255</item>
+         <item>11</item>
+         <item>80</item>
+         <item>150</item>
+         <item>162</item>
+         <item>175</item>
+         <item>198</item>
+         <item>226</item>
          <item>255</item>
     </integer-array>
 
@@ -92,7 +94,7 @@
     </integer-array>
 
     <!-- Minimum screen brightness allowed by the power manager. -->
-    <integer name="config_screenBrightnessDim">30</integer>
+    <integer name="config_screenBrightnessDim">20</integer>
 
     <string-array translatable="false" name="config_tether_usb_regexs">
 	<item>"rndis0"</item>
