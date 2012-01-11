@@ -68,7 +68,7 @@
          This must be overridden in platform specific overlays -->
     <!-- Values taken from stock Honeycomb 3.1 firmware and confirmed still being the same in stock 3.2 (KJ5) firmware -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-         <item>11</item>
+         <item>35</item>
          <item>80</item>
          <item>150</item>
          <item>162</item>
