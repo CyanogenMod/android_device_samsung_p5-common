@@ -96,9 +96,3 @@ BOARD_CHARGING_MODE_BOOTING_LPM := "/sys/class/power_supply/battery/charging_mod
 
 # Don't dequeue current buffer
 BOARD_NO_ALLOW_DEQUEUE_CURRENT_BUFFER := true
-
-# Fixes green tint problem
-COMMON_GLOBAL_CFLAGS += -DMISSING_EGL_EXTERNAL_IMAGE
-
-# Fixes youtube (HD still broken though)
-COMMON_GLOBAL_CFLAGS += -DMISSING_EGL_PIXEL_FORMAT_YV12
