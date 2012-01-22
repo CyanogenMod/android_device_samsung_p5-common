@@ -59,6 +59,10 @@ PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/lpm/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
      $(LOCAL_PATH)/lpm/media/Disconnected.qmg:system/media/Disconnected.qmg
 
+# Rotated and resized bootanimation
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/bootanimation.zip:system/media/bootanimation.zip
+
 PRODUCT_PROPERTY_OVERRIDES := \
     wifi.interface=wlan0 \
     wifi.supplicant_scan_interval=15
