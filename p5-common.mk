@@ -67,7 +67,7 @@ PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/bootanimation.zip:system/media/bootanimation.zip
 
 PRODUCT_PROPERTY_OVERRIDES := \
-    wifi.interface=wlan0 \
+    wifi.interface=eth0 \
     wifi.supplicant_scan_interval=15
 
 # Set default USB interface
