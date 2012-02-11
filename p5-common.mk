@@ -78,7 +78,6 @@ PRODUCT_PACKAGES += \
         libinvensense_mpl
 
 PRODUCT_PACKAGES += \
-	Torch \
         audio.a2dp.default \
         libaudioutils \
         audio.primary.p3
