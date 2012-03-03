@@ -75,9 +75,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
         persist.sys.usb.config=mtp
 
 PRODUCT_PACKAGES += \
-        libinvensense_mpl
-
-PRODUCT_PACKAGES += \
+        Torch \
+        libinvensense_mpl \
         audio.a2dp.default \
         libaudioutils \
         audio.primary.p3
