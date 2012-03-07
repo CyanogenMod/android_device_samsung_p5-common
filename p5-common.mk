@@ -70,6 +70,13 @@ PRODUCT_PROPERTY_OVERRIDES := \
     wifi.interface=eth0 \
     wifi.supplicant_scan_interval=15
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/bcm4330_aps.bin:system/etc/wifi/bcm4330_apsta.bin
+
+BOARD_WLAN_DEVICE_REV := bcm4330_b1
+
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/device-bcm.mk)
+
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
         persist.sys.usb.config=mtp
