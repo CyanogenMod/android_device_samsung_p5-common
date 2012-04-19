@@ -34,6 +34,9 @@ PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/init.p3.usb.rc:root/init.p3.usb.rc
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/modules/dhd.ko:system/lib/modules/dhd.ko
+
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab \
     $(LOCAL_PATH)/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/keylayout/sec_jack.kl:system/usr/keylayout/sec_jack.kl \
@@ -62,16 +65,9 @@ PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/lpm/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
      $(LOCAL_PATH)/lpm/media/Disconnected.qmg:system/media/Disconnected.qmg
 
-# Rotated and resized bootanimation
-PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/bootanimation.zip:system/media/bootanimation.zip
-
 PRODUCT_PROPERTY_OVERRIDES := \
     wifi.interface=eth0 \
     wifi.supplicant_scan_interval=15
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/wifi/bcm4330_aps.bin:system/etc/wifi/bcm4330_apsta.bin
 
 BOARD_WLAN_DEVICE_REV := bcm4330_b1
 
