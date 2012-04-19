@@ -29,8 +29,8 @@
     <item name="dsp.audio">120</item>
     <item name="dsp.video">758</item>
     <item name="radio.active">139</item>
-    <item name="gps.on">40</item>
     <item name="radio.scanning">25</item>
+    <item name="gps.on">40</item>
     <array name="radio.on">
         <value>4</value>
         <value>4</value>
