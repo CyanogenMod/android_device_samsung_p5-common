@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/init.p3.usb.rc:root/init.p3.usb.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/modules/dhd.ko:system/lib/modules/dhd.ko
+    $(LOCAL_PATH)/modules/bcmdhd.ko:system/lib/modules/bcmdhd.ko
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab \
