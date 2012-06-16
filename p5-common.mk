@@ -77,6 +77,10 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
         persist.sys.usb.config=mtp
 
+# Enable repeatable keys in clockwork recovery
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+        ro.cwm.enable_key_repeat=true
+
 PRODUCT_PACKAGES += \
         Torch \
         libinvensense_mpl \
