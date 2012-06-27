@@ -89,6 +89,9 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 
 #BOARD_LIB_DUMPSTATE := libdumpstate.ventana
 
+# Disable WebGL
+ENABLE_WEBGL := false
+
 # Use nicer font rendering
 BOARD_USE_SKIA_LCDTEXT := true
 
